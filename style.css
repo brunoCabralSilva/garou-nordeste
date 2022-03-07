@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif;
+}
+
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(116, 102, 102);
+}
+
+nav {
+  text-align: right;
+}
+
+#group_icon {
+  float: left;
+  margin-top: 10px;
+
+}
+
+.barra_de_navegacao {
+  display: inline-block;
+}
+
+.barra_de_navegacao a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  padding: 20px;    
+}
+
+.barra_de_navegacao a:hover {
+  background-color: black;
+  color: white;
+}
+
+.barra_de_links {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+header {
+  margin-top: 20px;
+  background-image: url('imagens/Fome\ Insaciável.png');
+  background-size: cover;
+  background-position: 50% 60%;
+  height: 400px;
+}
+
+header h1 {
+  padding-top: 100px;
+  padding-left: 40px;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  text-align: left;
+}
+
+#bloco_principal {
+  padding: 40px;
+  display: inline-block;
+  margin-top: 10px;
+  max-width: 54%;
+  vertical-align: top;
+  background-color: black;
+  color: white;
+}
+
+.titulo_post{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+#bloco_principal img {
+    padding-top: 20px;
+}
+
+#quadro_lateral {
+  padding: 36px;
+  margin-top: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  max-width: 33%;
+  vertical-align: top;
+  background-color: black;
+  color: white;
+}
+
+#quadro_lateral p {
+  padding-top: 20px;
+  padding-bottom: 42px;
+  line-height:2;
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+}
+
+#novidades {
+    margin-top: 10px;
+}
+.cada_novidade {
+  display: inline-block;
+  vertical-align: top;
+  width: 24.7%;
+  padding: 0px;
+}
+
+.cada_novidade:hover{
+    opacity: 0.8;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
