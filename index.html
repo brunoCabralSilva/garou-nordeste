@@ -18,21 +18,12 @@
 <body>
     <nav>
         <img src='imagens/Garou Nordeste.png' alt='icone do instagram' width='45' id='group_icon'>
-        <ul>
-            <li class='barra_de_navegacao'><a href=''>Quem somos</a></li>
-            <li class='barra_de_navegacao'><a href=''>Podcasts</a></li>
-            <li class='barra_de_navegacao'><a href=''>O que é?</a></li>
-            <li class='barra_de_navegacao'><a href=''>Parceiros</a></li>
-            <li class='barra_de_links'><img src='imagens/icones/instagram.png' alt='icone do instagram' width='25'>
-            <li class='barra_de_links'><img src='imagens/icones/Spotify.png' alt='icone do spotify' width='22'></li>
-            </li>
-            <li class='barra_de_links'><img src='imagens/icones/facebook.png' alt='icone do facebook' width='22'>
-            </li>
-            <li class='barra_de_links'><img src='imagens/icones/youtube.png' alt='icone do youtube' width='25'></li>
+        <ul id='barra_de_menu'>
         </ul>
     </nav>
     <header>
-        <h1>Garou<br>Nordeste</h1>
+        <h1 id='tituloPagina'>Garou<br>Nordeste</h1>
+        <button id='setaDireita'><img src='imagens/imagensTitulo/botao.png' width='100px'></button>
     </header>
     </header>
     <main>
@@ -47,29 +38,35 @@
                 O Garou Nordeste é um projeto que busca trazer toda a riqueza do Nordeste do Brasil ambientada para
                 "Lobisomem: O Apocalipse", cenário de RPG encontrado dentro do sistema WoD (Mundo das Trevas).
             </p>
-            <p>Tudo começou quando dois loucos, Bruno Gabryell, Felipe Brito e Jocélio Procópio, unidos por um projeto
+            <p>Tudo começou quando três loucos, Bruno Gabryell, Felipe Brito e Jocélio Procópio, unidos por um projeto
                 incrível chamado "Taverna Literária", decidiram investir em um novo projeto, totalmente voltado ao
                 nordeste e ao mundo dos Garou, para mostrar a todos do Brasil que há muito o que ser admirado em nossa
                 região além de apenas fome, seca e pobreza.</p>
         </aside>
         <article id='novidades'>
-            <section class='cada_novidade'>
-                <img src='imagens/podcasts/Fome Insaciável02insta.png' width = '100%'>
+            <section id="anuncio_podcasts">
+                <div id='queTalOuvir' class='opcaoPodcast'>
+                    Escolha uma plataforma para nos ouvir:
+                </div>
+                <div id='icone_youtube' class='opcaoPodcast'>
+                    <img src='imagens/Garou Nordeste.png' alt='icone do instagram'
+                        class='iconeGarouNordestePlataformas'>
+                    Youtube
+                </div>
+                <div id='icone_spotify' class='opcaoPodcast'>
+                    <img src='imagens/Garou Nordeste.png' alt='icone do instagram'
+                        class='iconeGarouNordestePlataformas'>
+                    Spotify
+                </div>
             </section>
-            <section class='cada_novidade'>
-                <img src='imagens/podcasts/Nas veredas do apocalipse e da destituição insta.png' width = '100%'>
-            </section>
-            <section class='cada_novidade'>
-                <img src='imagens/podcasts/Passos Cegos Vacilantes - 2.png' width = '100%'>
-            </section>
-            <section class='cada_novidade'>
-                <img src='imagens/podcasts/Terror no Casarão 02.png' width = '100%'>
-            </section>
+            
         </article>
     </main>
     <footer>
         © Todos os direitos reservados
     </footer>
+    <script src="scripts.js"></script>
+
 </body>
 
 </html>

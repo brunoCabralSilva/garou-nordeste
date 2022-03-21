@@ -5,8 +5,8 @@
 }
 
 body{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
     background-color: rgb(116, 102, 102);
 }
 
@@ -20,54 +20,59 @@ nav {
 
 }
 
-.barra_de_navegacao {
+.barraDeNavegacao {
   display: inline-block;
 }
 
-.barra_de_navegacao a {
+.barraDeNavegacao a {
   text-decoration: none;
   font-weight: 600;
   color: black;
   padding: 20px;    
 }
 
-.barra_de_navegacao a:hover {
-  background-color: black;
-  color: white;
-}
-
 .barra_de_links {
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 header {
   margin-top: 20px;
-  background-image: url('imagens/Fome\ Insaciável.png');
   background-size: cover;
   background-position: 50% 60%;
   height: 400px;
 }
 
-header h1 {
+#tituloPagina {
   padding-top: 100px;
   padding-left: 40px;
-  font-family: 'Comfortaa', cursive;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
   color: white;
   text-align: center;
   font-size: 80px;
   text-align: left;
+  display: inline-block;
+}
+
+#setaDireita{
+  float: right;
+  padding-top: 130px;
+  padding-right: 40px;
+  background-color: transparent;
+  border: 0px;
 }
 
 #bloco_principal {
   padding: 40px;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 3px;
   max-width: 54%;
   vertical-align: top;
   background-color: black;
   color: white;
+  height: 1080px;
 }
 
 .titulo_post{
@@ -80,11 +85,10 @@ header h1 {
 }
 
 #quadro_lateral {
-  padding: 36px;
-  margin-top: 10px;
-  margin-left: 5px;
+  padding: 38px;
+  margin-top: 3px;
   display: inline-block;
-  max-width: 33%;
+  max-width: 32%;
   vertical-align: top;
   background-color: black;
   color: white;
@@ -101,21 +105,73 @@ header h1 {
 }
 
 #novidades {
-    margin-top: 10px;
+    margin-top: 3px;
 }
+
+.opcaoPodcast{
+  display: inline-block;
+  color:white;
+  margin-bottom: 1px;
+  font-size: 20px;
+  padding:12px;
+  }
+
+#queTalOuvir{
+  background-color: black; 
+  text-align: center;
+  width: 59%;  
+}
+
+.iconeGarouNordestePlataformas{
+  padding-right: 10px;
+  width: 25px;
+  float: left;
+}
+
+#icone_spotify{
+  background-color: rgb(1, 46, 1); 
+  min-width: 17%;
+  text-align: center;
+}
+
+#icone_youtube{
+  background-color: rgb(87, 1, 1); 
+  min-width: 17%;
+  text-align: center;
+}
+
 .cada_novidade {
   display: inline-block;
   vertical-align: top;
-  width: 24.7%;
+  width: 24.8%;
   padding: 0px;
-}
-
-.cada_novidade:hover{
-    opacity: 0.8;
+  margin: 1px;
 }
 
 footer {
   background-color: black;
   color: white;
   padding: 20px;
+}
+
+#setaPodcastEsquerda{
+  background-color: transparent;
+  border: 0px;
+  display: inline-block;
+}
+
+#setaPodcastDireita{
+  background-color: transparent;
+  float: right;
+  border: 0px;
+  
+}
+
+button img{
+  width: 60px;
+}
+
+.repositorioBotoes {
+  background-color: black;
+  margin-bottom: 3px;
 }
