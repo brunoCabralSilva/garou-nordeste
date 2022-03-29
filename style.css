@@ -1,151 +1,177 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arvo', serif;
+body {
+    background-color:black;
 }
 
-body{
-    margin-left: 3px;
-    margin-right: 3px;
-    background-color: rgb(116, 102, 102);
-}
-
-nav {
-  text-align: right;
-}
-
-#group_icon {
-  float: left;
-  margin-top: 10px;
-
-}
-
-.barraDeNavegacao {
-  display: inline-block;
-}
-
-.barraDeNavegacao a {
-  text-decoration: none;
-  font-weight: 600;
-  color: black;
-  padding: 20px;    
+.barra_de_menu {
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content:flex-end;
 }
 
 .barra_de_links {
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 5px;
+  padding-right: 10px;
 }
 
-header {
-  margin-top: 20px;
+.linksDoMenu {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(116, 102, 102);
+  padding: 20px;    
+}
+
+.folder_apresentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-size: cover;
   background-position: 50% 60%;
   height: 400px;
+  padding-left: 30px;
+  padding-right: 5px;
 }
 
-#tituloPagina {
-  padding-top: 100px;
-  padding-left: 40px;
+.folder_paginas_derivadas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: 50% 7%;
+  padding-left: 30px;
+  padding-right: 5px;
+  font-size: 90px;
+  background-image: url('imagens/tribos/werewolfw20.png');
+}
+
+.tituloPagina {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
   color: white;
-  text-align: center;
   font-size: 80px;
-  text-align: left;
-  display: inline-block;
+  max-width: 45%;
 }
 
 #setaDireita{
-  float: right;
-  padding-top: 130px;
-  padding-right: 40px;
-  background-color: transparent;
-  border: 0px;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  margin-right: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  border: 0;
+}
+
+#setaDireita:hover{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  margin-right: 40px;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  border: 0;
+}
+
+#principal {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1px;
 }
 
 #bloco_principal {
   padding: 40px;
-  display: inline-block;
-  margin-top: 3px;
-  max-width: 54%;
+  max-width: 60%;
   vertical-align: top;
   background-color: black;
   color: white;
-  height: 1080px;
 }
 
 .titulo_post{
-    font-weight: 400;
-    font-size: 35px;
+  font-weight: 400;
+  font-size: 35px;
 }
 
 #bloco_principal img {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #quadro_lateral {
-  padding: 38px;
-  margin-top: 3px;
-  display: inline-block;
-  max-width: 32%;
+  margin-left: 1px;
+  max-width: 40%;
   vertical-align: top;
   background-color: black;
   color: white;
+  display: flex;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 #quadro_lateral p {
   padding-top: 20px;
-  padding-bottom: 42px;
   line-height:2;
-  max-width: 80%;
+  max-width: 70%;
   text-align: center;
   margin: auto;
   font-size: 18px;
 }
 
-#novidades {
-    margin-top: 3px;
+#quadro_lateral img {
+  padding-top: 50px;
+  padding-Bottom: 20px;
+  max-width: 80%;
+  margin: auto;
 }
 
-.opcaoPodcast{
-  display: inline-block;
+#novidades {
+    margin-top: 1px;
+}
+
+#podcasts_dinamicos {
+  display: flex;
+  
+}
+
+#anuncio_podcasts {
+  display: flex;
   color:white;
   margin-bottom: 1px;
   font-size: 20px;
-  padding:12px;
-  }
+  text-align: center;
+}
 
 #queTalOuvir{
   background-color: black; 
-  text-align: center;
-  width: 59%;  
+  min-width: 59.9%;
+  padding: 20px;
+  margin-right: 1px;
 }
 
-.iconeGarouNordestePlataformas{
-  padding-right: 10px;
-  width: 25px;
-  float: left;
+.opcaolink {
+  width: 30%;
+  padding: 20px;
 }
 
-#icone_spotify{
-  background-color: rgb(1, 46, 1); 
-  min-width: 17%;
-  text-align: center;
+#icone_spotify {
+  background-color: rgb(1, 46, 1);
 }
 
-#icone_youtube{
+#icone_youtube {
   background-color: rgb(87, 1, 1); 
-  min-width: 17%;
-  text-align: center;
 }
 
 .cada_novidade {
-  display: inline-block;
-  vertical-align: top;
-  width: 24.8%;
-  padding: 0px;
+  width: 25%;
   margin: 1px;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -157,7 +183,6 @@ footer {
 #setaPodcastEsquerda{
   background-color: transparent;
   border: 0px;
-  display: inline-block;
 }
 
 #setaPodcastDireita{

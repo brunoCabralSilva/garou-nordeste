@@ -1,7 +1,7 @@
 
 menuTitulos = {
-    nomeLinksMenu: ['Quem Somos', 'Podcasts', 'O que é', 'Parceiros'],
-    linksMenu: ['', '', '', '']
+    nomeLinksMenu: ['Início','Quem Somos', 'Podcasts', 'O que é', 'Tribos', 'Augúrios', 'Parceiros'],
+    linksMenu: ['index.html','quem_somos.html', 'podcasts.html', 'o_que_e.html', 'tribos.html', 'augurios.html', 'parceiros.html']
 };
 
 reDesSociais = {
@@ -41,7 +41,7 @@ let imagemDeTitulo = ["url('imagens/imagensTitulo/Fome Insaciável.png')", "url(
 let linkPodcastsEscolhido = [];
 let countBotao = 0;
 
-let barraDeMenu = document.getElementById('barra_de_menu');
+let barraDeMenu = document.getElementsByClassName('barra_de_menu')[0];
 
 for (let i = 0; i < menuTitulos.nomeLinksMenu.length; i += 1) {
 
@@ -85,17 +85,17 @@ for (let j = 0; j < menuTitulos.nomeLinksMenu.length; j += 1) {
     let eventosLink = document.getElementsByClassName('linksDoMenu')[j];
 
     eventosLink.addEventListener('mouseover', function () {
-        eventosLink.style.backgroundColor = 'black';
-        eventosLink.style.color = 'white';
-    });
-
-    eventosLink.addEventListener('mouseleave', function () {
         eventosLink.style.backgroundColor = 'rgb(116, 102, 102)';
         eventosLink.style.color = 'black';
     });
+
+    eventosLink.addEventListener('mouseleave', function () {
+        eventosLink.style.backgroundColor = 'black';
+        eventosLink.style.color = 'rgb(116, 102, 102)';
+    });
 }
 
-let header = document.getElementsByTagName('header')[0];
+let header = document.getElementById('pagina_index');
 header.style.backgroundImage = imagemDeTitulo[countBotao];
 
 let setaDireita = document.getElementById('setaDireita');
@@ -136,7 +136,7 @@ icone_spotify.addEventListener('mouseleave', function () {
 });
 
 
-let sectionCadaNovidade = document.getElementById('novidades');
+let sectionCadaNovidade = document.getElementById('podcasts_dinamicos');
 
 for (let i = 0; i < podcast.length; i += 1) {
 
@@ -173,12 +173,12 @@ for (let i = 0; i <= 3; i += 1) {
 
         cada_Novidade.addEventListener('mouseover', function () {
             cada_Novidade.style.opacity = '0.7';
-            cada_Novidade.style.backgroundColor = 'green';
+            cada_Novidade.style.border = '2px solid green';
         });
 
         cada_Novidade.addEventListener('mouseleave', function () {
             cada_Novidade.style.opacity = '1';
-            cada_Novidade.style.backgroundColor = 'transparent';
+            cada_Novidade.style.border = '1px solid transparent';
         });
 
     });
@@ -192,12 +192,12 @@ for (let i = 0; i <= 3; i += 1) {
 
         cada_Novidade.addEventListener('mouseover', function () {
             cada_Novidade.style.opacity = '0.7';
-            cada_Novidade.style.backgroundColor = 'red';
+            cada_Novidade.style.border = '2px solid red';
         });
 
         cada_Novidade.addEventListener('mouseleave', function () {
             cada_Novidade.style.opacity = '1';
-            cada_Novidade.style.backgroundColor = 'transparent';
+            cada_Novidade.style.border = '1px solid transparent';
         });
 
     });
